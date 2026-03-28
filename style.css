@@ -1,0 +1,450 @@
+/* Variáveis de Cores e Fontes */
+:root {
+    --cor-primaria: #e63946;
+    --cor-secundaria: #1d3557;
+    --cor-destaque: #f1faee;
+    --cor-texto: #333;
+    --fundo-claro: #f8f9fa;
+    --branco: #ffffff;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transicao: all 0.3s ease;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background: #c8ad93;
+}
+
+/* Cabecalho e Navegação */
+.cabecalho {
+    background-color: var(--branco);
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.8rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    text-decoration: none;
+}
+
+.logo-site {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: -15px;
+}
+
+.nome-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    transition: var(--transicao);
+}
+
+.menu a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Seção de Destaque (Hero) */
+.secao-principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.botao-explorar {
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-explorar:hover {
+    background: #c1121f;
+    transform: translateY(-3px);
+}
+
+.secao-principal h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.secao-principal p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Seção de Busca */
+.secao-busca {
+    padding: 2rem 5%;
+    background-color: var(--branco);
+    text-align: center;
+    margin-top: -30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--sombra);
+    position: relative;
+    z-index: 10;
+}
+
+.conteiner-busca {
+    display: flex;
+    justify-content: center;
+}
+
+.campo-busca {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.lupa-busca {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+#entrada-busca {
+    padding: 12px 20px 12px 45px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    transition: var(--transicao);
+}
+
+#entrada-busca:focus {
+    border-color: var(--cor-primaria);
+}
+
+/* Seção de Restaurantes */
+.secao-restaurantes {
+    padding: 4rem 5%;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+}
+
+.grade-restaurantes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cartao-restaurante {
+    background: #e7d7c9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: var(--transicao);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.cartao-restaurante:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cartao-restaurante.destacado {
+    border-color: var(--cor-primaria);
+    transform: scale(1.02);
+}
+
+.cartao-restaurante img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.conteudo-cartao {
+    padding: 20px;
+}
+
+.conteudo-cartao h3 {
+    margin-bottom: 5px;
+    color: var(--cor-secundaria);
+}
+
+.tipo-comida {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.conteudo-cartao p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.btn-ver-mais {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: var(--transicao);
+}
+
+.btn-ver-mais:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Seção de Contato */
+.secao-contato {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    padding: 2rem 5%;
+}
+
+.conteiner-contato {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contato {
+    display: grid;
+    gap: 15px;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-formulario label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn-enviar {
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transicao);
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #c1121f;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* --- Estilo do Modal (Aba Interna) --- */
+.modal {
+    display: none;
+    /* Escondido por padrão */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo escuro */
+    overflow-y: auto;
+    /* Permite rolar se a lista for grande */
+}
+
+.conteudo-modal {
+    background-color: var(--branco);
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    animation: abrirModal 0.4s ease-out;
+}
+
+@keyframes abrirModal {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fechar-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.fechar-modal:hover {
+    color: var(--cor-primaria);
+}
+
+#titulo-modal {
+    margin-bottom: 25px;
+    color: var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 10px;
+}
+
+/* Lista de Restaurantes dentro do Modal */
+.item-melhor-restaurante {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.img-miniatura {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info-melhor-restaurante h4 {
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+}
+
+.avaliacao-google {
+    color: #f39c12;
+    /* Cor de estrela do Google */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn-visitar {
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .secao-principal h1 {
+        font-size: 2rem;
+    }
+
+    .grade-restaurantes {
+        grid-template-columns: 1fr;
+    }
+
+    .item-melhor-restaurante {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mensagem de Erro/Sucesso */
+.erro {
+    color: #ffb703;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
