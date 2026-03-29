@@ -192,3 +192,20 @@ window.onclick = function(event) {
         document.body.style.overflow = 'auto';
     }
 }
+
+// Efeito Scroll 
+const observadorScroll = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+        // Se o elemento estiver visível na tela
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add('active');
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+// Seleciona todos os elementos com a classe 'reveal' e começa a observar
+document.querySelectorAll('.reveal').forEach((elemento) => {
+    observadorScroll.observe(elemento);
+});
