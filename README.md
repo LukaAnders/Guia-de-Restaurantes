@@ -1,9 +1,10 @@
-🍽️ Guia Gourmet – Site de Restaurantes
+🍽️ Guia Gourmet – SITE DE RESTAURANTES
 
 Bem-vindo ao Guia Gourmet, um site moderno e interativo para explorar os melhores restaurantes de Curitiba!
 O projeto permite buscar categorias de comida, visualizar sugestões e interagir com uma interface intuitiva.
 
-📌 Funcionalidades
+📌 FUNCIONALIDADES 
+
 
 ✅ Busca dinâmica por nome ou tipo de comida
 
@@ -18,7 +19,8 @@ O projeto permite buscar categorias de comida, visualizar sugestões e interagir
 ✅ Layout responsivo (funciona em celular e desktop)
 
 
-🧪 Tecnologias Utilizadas
+🧪 TECNOLOGIAS UTILIZADAS
+
 
 ✅HTML5 – Estrutura do site
 
@@ -26,16 +28,20 @@ O projeto permite buscar categorias de comida, visualizar sugestões e interagir
 
 ✅JavaScript (Vanilla) – Interatividade e lógica
 
-🔍 Como Funciona
+🔍 COMO FUNCIONA
 
-🔎 Sistema de Busca
+
+🔎 SISTEMA DE BUSCA
+
+
 O usuário digita no campo de busca
 
 Os cards são filtrados automaticamente com base no nome ou tipo de comida
 
-🧾 Modal de Restaurantes
-Ao clicar em "Ver mais", abre um modal
+🧾 MODAL DE RESTAURANTES
 
+
+Ao clicar em "Ver mais", abre um modal
 Exibe os melhores restaurantes da categoria escolhida
 
 Contém:
@@ -46,7 +52,8 @@ Contém:
 
 ✅Link para o Google Maps
 
-📩 Formulário de Contato
+📩 FORMULÁRIO DE CONTATO
+
 Validação de:
 
 ✅Nome (obrigatório)
@@ -57,7 +64,8 @@ Validação de:
 
 ✅Exibe alerta de sucesso ao enviar corretamente
 
-📱 Responsividade
+📱 RESPONSIVIDADE
+
 
 O site se adapta automaticamente para:
 
@@ -68,7 +76,8 @@ O site se adapta automaticamente para:
 🖥️ Desktops
 
 
-🎨 Design
+🎨 DESIGN
+
 
 ✅Paleta moderna com destaque em vermelho
 
@@ -79,7 +88,8 @@ O site se adapta automaticamente para:
 ✅Modal com efeito de abertura
 
 
-💡 Melhorias Futuras
+💡 MELHORIAS FUTURAS
+
 
 Integração com API real de restaurantes
 
