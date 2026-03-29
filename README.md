@@ -19,29 +19,42 @@ O projeto permite buscar categorias de comida, visualizar sugestões e interagir
 
 
 🧪 Tecnologias Utilizadas
+
 ✅HTML5 – Estrutura do site
+
 ✅CSS3 – Estilização e responsividade
+
 ✅JavaScript (Vanilla) – Interatividade e lógica
 
 🔍 Como Funciona
 
 🔎 Sistema de Busca
 O usuário digita no campo de busca
+
 Os cards são filtrados automaticamente com base no nome ou tipo de comida
 
 🧾 Modal de Restaurantes
 Ao clicar em "Ver mais", abre um modal
+
 Exibe os melhores restaurantes da categoria escolhida
+
 Contém:
+
 ✅Nome
+
 ✅Nota
+
 ✅Link para o Google Maps
 
 📩 Formulário de Contato
 Validação de:
+
 ✅Nome (obrigatório)
+
 ✅Email (formato válido)
+
 ✅Mensagem (obrigatória)
+
 ✅Exibe alerta de sucesso ao enviar corretamente
 
 📱 Responsividade
@@ -49,18 +62,32 @@ Validação de:
 O site se adapta automaticamente para:
 
 📱 Celulares
+
 💻 Tablets
+
 🖥️ Desktops
 
+
 🎨 Design
-Paleta moderna com destaque em vermelho
-Cards com animações suaves
-Interface limpa e intuitiva
-Modal com efeito de abertura
+
+✅Paleta moderna com destaque em vermelho
+
+✅Cards com animações suaves
+
+✅Interface limpa e intuitiva
+
+✅Modal com efeito de abertura
+
 
 💡 Melhorias Futuras
+
 Integração com API real de restaurantes
+
 Sistema de favoritos 
+
 Login de usuários
+
 Avaliações com comentários
+
 Geolocalização automática
+
