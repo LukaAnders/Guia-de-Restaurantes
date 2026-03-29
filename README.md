@@ -6,11 +6,17 @@ O projeto permite buscar categorias de comida, visualizar sugestões e interagir
 📌 Funcionalidades
 
 ✅ Busca dinâmica por nome ou tipo de comida
+
 ✅ Destaque visual ao clicar nos cards
+
 ✅ Modal com lista dos melhores restaurantes por categoria
+
 ✅ Validação de formulário de contato
+
 ✅ Rolagem suave entre seções
+
 ✅ Layout responsivo (funciona em celular e desktop)
+
 
 🧪 Tecnologias Utilizadas
 ✅HTML5 – Estrutura do site
