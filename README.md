@@ -30,6 +30,8 @@ O projeto permite buscar categorias de comida, visualizar sugestões e interagir
 
 🔍 COMO FUNCIONA:
 
+O Guia Gourmet foi desenvolvido para oferecer uma experiência simples, rápida e agradável na busca por restaurantes em Curitiba. A navegação é totalmente intuitiva, permitindo que qualquer usuário encontre opções de comida em poucos cliques.
+
 
 🔎 SISTEMA DE BUSCA:
 
