@@ -1,4 +1,4 @@
-🍽️ Guia Gourmet – SITE DE RESTAURANTES
+<h1>🍽️ Guia Gourmet – SITE DE RESTAURANTES</h1>
 
 Bem-vindo ao Guia Gourmet, um site moderno e interativo para explorar os melhores restaurantes de Curitiba!
 O projeto permite buscar categorias de comida, visualizar sugestões e interagir com uma interface intuitiva.
