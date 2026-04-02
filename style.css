@@ -30,12 +30,13 @@ body {
 
 /* Cabecalho e Navegação */
 .cabecalho {
-    background-color: var(--branco);
-    box-shadow: var(--sombra);
-    position: sticky;
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 0.8rem 5%;
+    padding: 1.2rem 5%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -312,6 +313,13 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+.titulo-secao-rodape  {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--branco);
 }
 
 /* --- Estilo do Modal (Aba Interna) --- */
