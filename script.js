@@ -22,7 +22,7 @@ const formularioContato = document.getElementById('formulario-contato');
 
 formularioContato.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     let ehValido = true;
     const nome = document.getElementById('nome');
     const email = document.getElementById('email');
@@ -68,11 +68,11 @@ cartoesRestaurante.forEach(cartao => {
 
 // Rolagem suave
 document.querySelectorAll('nav a').forEach(ancora => {
-    ancora.addEventListener('click', function(e) {
+    ancora.addEventListener('click', function (e) {
         e.preventDefault();
         const idAlvo = this.getAttribute('href').replace('#', '');
         const elementoAlvo = document.getElementById(idAlvo);
-        
+
         if (elementoAlvo) {
             window.scrollTo({
                 top: elementoAlvo.offsetTop - 80, // Compensação do header fixo
@@ -80,6 +80,17 @@ document.querySelectorAll('nav a').forEach(ancora => {
             });
         }
     });
+});
+
+//  Controle do Cabeçalho na Rolagem
+const cabecalho = document.querySelector('.cabecalho');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        cabecalho.classList.add('rolagem');
+    } else {
+        cabecalho.classList.remove('rolagem');
+    }
 });
 
 
@@ -176,17 +187,17 @@ document.querySelectorAll('.btn-ver-mais').forEach(botao => {
         const cartao = botao.closest('.cartao-restaurante');
         const categoria = cartao.getAttribute('data-tipo');
         abrirAbaInterna(categoria);
-    });     
+    });
 });
 
 // Fechar modal ao clicar no X
-btnFechar.onclick = function() {
+btnFechar.onclick = function () {
     modal.style.display = "none";
     document.body.style.overflow = 'auto'; // Destrava a rolagem
 }
 
 // Fechar modal se clicar fora da caixa branca
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
         document.body.style.overflow = 'auto';
