@@ -213,7 +213,8 @@ const observadorScroll = new IntersectionObserver((entradas) => {
         }
     });
 }, {
-    threshold: 0.5
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px' // Ativa um pouco antes de chegar na borda inferior
 });
 
 // Seleciona todos os elementos com a classe 'reveal' e começa a observar
