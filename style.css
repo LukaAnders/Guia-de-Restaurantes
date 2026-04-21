@@ -196,7 +196,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    ;
     transition: all 0.3s ease;
     cursor: pointer;
     border: 2px solid transparent;
@@ -447,6 +446,11 @@ footer {
     .item-melhor-restaurante {
         flex-direction: column;
         text-align: center;
+    }
+
+    .reveal {
+        transform: translateY(20px); /* Menos deslocamento no celular */
+        transition: all 0.5s ease; /* Mais rápido no celular */
     }
 }
 

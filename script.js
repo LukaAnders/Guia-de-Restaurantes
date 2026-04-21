@@ -210,11 +210,13 @@ const observadorScroll = new IntersectionObserver((entradas) => {
         // Se o elemento estiver visível na tela
         if (entrada.isIntersecting) {
             entrada.target.classList.add('active');
+            // Para de observar o elemento depois que ele já apareceu
+            observadorScroll.unobserve(entrada.target);
         }
     });
 }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px' // Ativa um pouco antes de chegar na borda inferior
+    threshold: 0.1, // Mais sensível (10% de visibilidade)
+    rootMargin: '0px 0px -20px 0px' // Margem menor para telas pequenas
 });
 
 // Seleciona todos os elementos com a classe 'reveal' e começa a observar
